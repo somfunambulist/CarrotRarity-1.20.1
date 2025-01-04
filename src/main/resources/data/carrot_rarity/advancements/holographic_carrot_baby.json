@@ -1,0 +1,38 @@
+{
+  "parent": "carrot_rarity:carrot_baby",
+  "criteria": {
+    "has_holographic_carrot_baby": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "carrot_rarity:holographic_carrot_baby"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "You hit the jackpot!"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "item": "carrot_rarity:holographic_carrot_baby"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Secret Rare"
+    }
+  },
+  "requirements": [
+    [
+      "has_holographic_carrot_baby"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

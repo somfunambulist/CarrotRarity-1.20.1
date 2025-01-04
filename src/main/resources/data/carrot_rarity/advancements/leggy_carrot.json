@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "has_leggy_carrot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "carrot_rarity:leggy_carrot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/block/gold_block.png",
+    "description": {
+      "text": "That's a nice pull!"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "carrot_rarity:leggy_carrot"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Carrot Rarity"
+    }
+  },
+  "requirements": [
+    [
+      "has_leggy_carrot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

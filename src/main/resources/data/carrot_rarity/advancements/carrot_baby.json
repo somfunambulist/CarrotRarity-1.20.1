@@ -1,0 +1,38 @@
+{
+  "parent": "carrot_rarity:leggy_carrot",
+  "criteria": {
+    "has_carrot_baby": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "carrot_rarity:carrot_baby"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "(Best Carrot In the Format)"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "carrot_rarity:carrot_baby"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "BCIF"
+    }
+  },
+  "requirements": [
+    [
+      "has_carrot_baby"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
