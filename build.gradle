@@ -61,6 +61,8 @@ minecraft {
     runs {
         // applies to all the run configs below
         configureEach {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
             workingDirectory project.file('run')
 
             // Recommended logging data for a userdev environment
@@ -121,6 +123,9 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
+    maven {
+        url"https://www.cursemaven.com/"
+    }
 }
 
 dependencies {
@@ -145,6 +150,11 @@ dependencies {
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+
+    //farmers delight for testing
+    runtimeOnly fg.deobf("curse.maven:farmersdelight-398521:5962797")
+    //jei for testing
+    runtimeOnly fg.deobf("curse.maven:jei-238222:6075247")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

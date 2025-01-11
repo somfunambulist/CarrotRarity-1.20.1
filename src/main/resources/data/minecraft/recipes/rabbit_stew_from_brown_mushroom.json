@@ -13,7 +13,7 @@
       "item": "minecraft:bowl"
     },
     {
-      "tag": "carrot_rarity:is_carrot"
+      "tag": "forge:crops/carrot"
     },
     {
       "item": "minecraft:brown_mushroom"

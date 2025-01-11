@@ -1,0 +1,14 @@
+{
+  "values": [
+    "#forge:raw_pork",
+    "#forge:raw_fishes",
+    "#forge:raw_chicken",
+    "#forge:raw_beef",
+    "#forge:raw_mutton",
+    "#forge:eggs",
+    "#forge:mushrooms",
+    "#forge:crops/carrot",
+    "#forge:crops/potato",
+    "#forge:crops/beetroot"
+  ]
+}

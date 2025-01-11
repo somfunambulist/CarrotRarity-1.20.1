@@ -35,49 +35,65 @@
                 }
               ],
               "name": "minecraft:carrot"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "tag": "forge:shears"
+                }
+              }
+            }
+          ],
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "carrot_rarity:twisty_carrot",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
             },
             {
-              "type": "minecraft:alternatives",
-              "children": [
+              "type": "minecraft:item",
+              "name": "carrot_rarity:leggy_carrot",
+              "conditions": [
                 {
-                  "type": "minecraft:item",
-                  "name": "carrot_rarity:twisty_carrot",
-                  "conditions": [
-                    {
-                      "condition": "minecraft:random_chance",
-                      "chance": 0.15
-                    }
-                  ]
-                },
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.022
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "carrot_rarity:carrot_baby",
+              "conditions": [
                 {
-                  "type": "minecraft:item",
-                  "name": "carrot_rarity:leggy_carrot",
-                  "conditions": [
-                    {
-                      "condition": "minecraft:random_chance",
-                      "chance": 0.022
-                    }
-                  ]
-                },
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.000244140625
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "carrot_rarity:holographic_carrot_baby",
+              "conditions": [
                 {
-                  "type": "minecraft:item",
-                  "name": "carrot_rarity:carrot_baby",
-                  "conditions": [
-                    {
-                      "condition": "minecraft:random_chance",
-                      "chance": 0.000244140625
-                    }
-                  ]
-                },
-                {
-                  "type": "minecraft:item",
-                  "name": "carrot_rarity:holographic_carrot_baby",
-                  "conditions": [
-                    {
-                      "condition": "minecraft:random_chance",
-                      "chance": 0.0001220703125
-                    }
-                  ]
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.0001220703125
                 }
               ]
             }

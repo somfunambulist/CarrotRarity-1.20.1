@@ -3,18 +3,21 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:fishing_rod"
+      "item": "minecraft:dried_kelp"
+    },
+    "R": {
+      "item": "farmersdelight:cooked_rice"
     },
     "X": {
       "tag": "forge:crops/carrot"
     }
   },
   "pattern": [
-    "# ",
-    " X"
+    "RXR",
+    "###"
   ],
   "result": {
-    "item": "minecraft:carrot_on_a_stick"
+    "item": "farmersdelight:kelp_roll"
   },
   "show_notification": true
 }
